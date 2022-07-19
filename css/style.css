@@ -1,0 +1,538 @@
+/* ================================ */
+/* all common css start */
+* {
+     margin: 0;
+     padding: 0;
+}
+
+.container {
+     width: 1328px;
+     margin: 0 auto;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+     margin: 0;
+     padding: 0;
+     line-height: 0.8;
+}
+
+a,
+a:hover {
+     text-decoration: none;
+     display: inline-block;
+}
+
+body {
+     font-family: 'Poppins', sans-serif;
+}
+
+/* all common css end */
+/* ========================================= */
+
+
+/* ============================================== */
+/* banner  part css start */
+/* =========================================== */
+#banner {
+     margin: 50px;
+}
+
+.banner_main {
+     background-color: #161616;
+     border-radius: 30px;
+     display: flex;
+}
+
+.banner_left {
+     width: 50%;
+     padding-right: 70px;
+}
+
+.banner_text {
+     padding-top: 113px;
+     padding-left: 104px;
+     color: aliceblue;
+}
+
+.banner_title {
+     font-size: 70px;
+     font-weight: 700;
+     line-height: 80px;
+}
+
+.banner_info {
+     margin-top: 10px;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 26px;
+     color: #fff;
+}
+
+.banner_img {
+     position: relative;
+     z-index: 1;
+}
+
+.img_overly {
+     position: absolute;
+     top: 25%;
+     left: 4%;
+     background: gold;
+     height: 300px;
+     width: 300px;
+     z-index: -1;
+     transform: translate(-50%, -50%) rotate(45deg);
+     animation: animeRotate 5s linear 0s infinite alternate;
+}
+
+@keyframes animeRotate {
+     0% {
+          transform: rotate(-45deg);
+     }
+
+     100% {
+          transform: rotate(-25deg);
+     }
+
+}
+
+.btn,
+.hide_btn {
+     margin-top: 30px;
+     border-radius: 5px;
+     padding: 15px 25px;
+     background: #DD0000;
+     text-transform: uppercase;
+     color: #fff;
+     font-size: 20px;
+     font-weight: 600;
+}
+
+.btn i {
+     margin-left: 15px;
+}
+
+.banner_img img {
+     margin-top: 32px;
+     width: 550px;
+     height: 612px;
+     margin-bottom: -6px;
+}
+
+/* ============================================== */
+/* banner  part css end */
+/* =========================================== */
+
+
+/* ============================================== */
+/* blogs  part css start */
+/* =========================================== */
+#blogs_part {
+     margin: 100px 0px;
+     background: #fff;
+}
+
+nav .menu {
+     background: #DD0000;
+}
+
+.nav_iteam {
+     background: #161616;
+     padding: 25px;
+     border-radius: 10px;
+}
+
+nav ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+}
+
+nav ul li {
+     list-style: none;
+     margin-top: 20px;
+     background: #ffff;
+     padding: 15px;
+     text-align: center;
+     border-radius: 10px;
+     padding: 15px;
+     text-align: center;
+     border-radius: 10px;
+}
+
+nav ul li a {
+     color: #161616;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 30px;
+}
+
+nav ul li:hover a {
+     color: #fff;
+}
+
+.active {
+     color: #fff;
+     background: #DD0000;
+}
+
+nav ul li:hover {
+     color: #fff;
+     background: #DD0000;
+}
+
+.main_blog {
+     display: flex;
+     justify-content: baseline;
+     gap: 30px;
+}
+
+.blog_left {
+     width: 30%;
+}
+
+.blog_right {
+     width: 70%;
+}
+
+.blog_right {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 20px;
+     grid-row-gap: 20px;
+}
+
+.blog_img img {
+     width: 100%;
+}
+
+.blog {
+     background: #eeee;
+}
+
+.blog_descriftion {
+     padding: 20px 15px;
+     padding-top: 5px;
+}
+
+.blog_btn {
+     margin: 10px 0px;
+     padding: 8px 15px;
+     border-top-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+     background: #DD0000;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 24px;
+}
+
+.blog_title {
+     padding: 15px 0px;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 27px;
+
+}
+
+.blog_info span {
+     margin-left: 8px;
+}
+
+.blog_info i.fa-ring {
+     margin-left: 30px;
+}
+
+.item {
+     visibility: hidden;
+}
+
+.hide {
+     text-align: center;
+     margin: 20px 0px;
+     visibility: hidden;
+}
+
+/* ============================================== */
+/* blogs  part css end */
+/* =========================================== */
+
+
+/* ============================================== */
+/* footer part css end */
+/* =========================================== */
+#footer {
+     padding: 70px 0px;
+     background: #161616;
+}
+
+.footer_title {
+     font-size: 40px;
+     font-weight: 600;
+     line-height: 60px;
+     color: #fff;
+     text-transform: capitalize;
+     text-align: center;
+}
+
+hr {
+     margin-top: 35px;
+}
+
+.footer_nav ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.footer_nav ul li {
+     list-style: none;
+     margin-right: 30px;
+}
+
+.footer_nav ul li a {
+     color: #B9B9B9;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 24px;
+     margin-top: 40px;
+}
+
+.footer_icn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     margin-top: 20px;
+}
+
+.footer_icn a {
+     height: 50px;
+     width: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     color: #fff;
+     background: #000;
+     font-size: 20px;
+}
+
+.footer_icn a:hover {
+     color: #000;
+     background: #fff;
+}
+
+/* ============================================== */
+/* footer part css end */
+/* =========================================== */
+
+/* ==================================== */
+/* flag part css  end */
+/* =================================== */
+.Flag {
+     padding: 30px 20px;
+     text-align: center;
+     border: 1px solid red;
+     border-radius: 10px;
+}
+
+.flag_item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+}
+
+.flag_info h3 {
+     padding: 15px 0px;
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 30px;
+}
+
+.flag_info p {
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 20px;
+     color: #4D4D4D;
+}
+/* ==================================== */
+/* flag part css  end */
+/* =================================== */
+/* ======================================================= */
+@media (max-width:676px) {
+     #banner {
+          margin-bottom: 10px;
+     }
+
+     .banner_main {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .container {
+          width: 100%;
+     }
+
+     .banner_left {
+          width: 100%;
+     }
+
+     .banner_text {
+          text-align: center;
+     }
+
+     .banner_title {
+          font-size: 40px;
+          line-height: 50px;
+          text-align: center;
+     }
+
+     .img_overly {
+          display: none;
+     }
+
+     .banner_img {
+          margin-top: 30px;
+          text-align: center;
+     }
+
+     .banner_img img {
+          padding-left: 15%;
+          width: 75%;
+          margin: 0 auto;
+     }
+
+     .banner_info {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+     }
+
+     .main_blog {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     #blogs_part {
+          margin-top: 0;
+          margin-bottom: 0px;
+     }
+
+     .blog_left {
+          width: 50%;
+     }
+
+     .nav_iteam {
+          background: none;
+     }
+
+     .nav_iteam ul li {
+          border: 1px solid red;
+     }
+
+     .blog_right {
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .blog_right {
+          width: 90%;
+     }
+
+     #footer {
+          margin-top: 0px;
+     }
+
+     .hide {
+          margin: 0;
+     }
+
+     .footer_nav ul {
+          flex-direction: column;
+     }
+
+     .footer_icn {
+          margin-top: 10px;
+     }
+}
+/* ==================================================== */
+
+
+
+/* =============================================================*/
+@media only screen and (min-width:677px) and (max-width:992px) {
+     .container {
+          width: 100%;
+     }
+
+     .banner_img img {
+          height: 340px;
+          width: 323px;
+
+     }
+
+     .banner_title {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 30px;
+     }
+
+     .img_overly {
+          display: none;
+     }
+
+     .blog_right {
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .banner_info {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+     }
+
+     .main_blog {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .nav_iteam {
+          background: none;
+     }
+
+     .nav_iteam ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .blog_left {
+          width: 100%;
+     }
+
+     .nav_iteam ul li {
+          border: 1px solid red;
+          margin-left: 25px;
+     }
+
+     .hide_btn {
+          visibility: visible;
+     }
+}
+/* ===================================================== */
+
+
