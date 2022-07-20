@@ -212,7 +212,7 @@ nav ul li:hover {
 .blog {
      background: #eeee;
      border-radius: 5px;
-     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+         box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
 }
 
 .blog_descriftion {
@@ -444,7 +444,7 @@ hr {
      }
 
      .nav_iteam ul li {
-          border: 1px solid red;
+          border: 3px solid burlywood;
      }
 
      .blog_right {
